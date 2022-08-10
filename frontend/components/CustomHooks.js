@@ -52,9 +52,9 @@ export default function App() {
       <p>{count} <button onClick={inc}>inc</button><button onClick={dec}>dec</button></p>
 
       <form>
-        <input name="foo" placeholder="type foo" /><br />
-        <input name="bar" placeholder="type bar" /><br />
-        <input name="baz" placeholder="type baz" />
+        <input  name="foo" placeholder="type foo" /><br />
+        <input  name="bar" placeholder="type bar" /><br />
+        <input  name="baz" placeholder="type baz" />
       </form>
     </>
   )
