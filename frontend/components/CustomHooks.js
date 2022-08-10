@@ -42,7 +42,7 @@ function useForm(initial) {
 }
 
 function useLS(key, value) {
-
+  
 }
 
 export default function App() {
