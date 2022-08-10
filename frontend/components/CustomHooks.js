@@ -16,6 +16,7 @@ function useRandomQuote() {
         console.log(err.message)
       })
   }, [])
+  return randomQuote
 }
 
 function useCount(initial) {
