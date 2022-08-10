@@ -7,8 +7,7 @@ function useRandomQuote() {
     axios.get('http://localhost:9000/api/quotes')
       .then(res => {
         // how do we get the number of quotes?
-        // const numOfQuotes = res.data
-        debugger
+        const numOfQuotes = res.data.quotes
       })
       .catch(err => {
         console.log(err.message)
