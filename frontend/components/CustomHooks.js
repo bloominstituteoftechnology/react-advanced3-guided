@@ -56,7 +56,7 @@ function useLS(key, value) { // work just like `useState('foobar', [1,2,3])`
     setData(dataToSet)
   }
 
-  return [data, Function.prototype]
+  return [data, setState]
 }
 
 export default function App() {
