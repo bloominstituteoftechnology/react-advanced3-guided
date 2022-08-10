@@ -51,7 +51,8 @@ function useLS(key, value) { // work just like `useState('foobar', [1,2,3])`
   })
 
   const setState = (dataToSet) => {
-    const 
+    const stringified = JSON.stringify(dataToSet)
+    window.localStorage.setItem(key, stringified)
   }
 
   return [data, Function.prototype]
