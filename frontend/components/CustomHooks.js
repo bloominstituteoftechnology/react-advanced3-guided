@@ -7,7 +7,8 @@ function useRandomQuote() {
     axios.get('http://localhost:9000/api/quotes')
       .then(res => {
         const numOfQuotes = res.data.quotes.length
-        const randomNum = 
+        const randomIdx =
+        
       })
       .catch(err => {
         console.log(err.message)
