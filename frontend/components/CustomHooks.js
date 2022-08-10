@@ -42,16 +42,13 @@ function useForm(initial) {
 }
 
 function useLS(key, value) {
-  debugger
-  window.localStorage.setItem('foobar', JSON.stringify([1, 2, 3]))
+  // window.localStorage.setItem('foobar', JSON.stringify([1, 2, 3]))
 }
 
 export default function App() {
   const quoteOfTheDay = useRandomQuote()
   const [count, inc, dec] = useCount(19)
   const [values, onChange] = useForm({ foo: '', bar: '', baz: '' })
-
-  useLS()
 
   return (
     <>
