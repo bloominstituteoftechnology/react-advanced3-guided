@@ -21,13 +21,13 @@ function useRandomQuote() {
 
 function useCount(initial) {
   const [value, setValue] = useState(initial)
-  
+
   const inc = () => {
-    setValue()
+    setValue(value + 1)
   }
 
   const dec = () => {
-    debugger
+    setValue(value - 1)
   }
 
   return [value, inc, dec]
