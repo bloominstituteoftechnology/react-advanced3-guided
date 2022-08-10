@@ -33,12 +33,12 @@ function useLS(key, value) {
 
 export default function App() {
   const quoteOfTheDay = useRandomQuote()
-  debugger
+
   return (
     <>
       <h2>Custom Hooks</h2>
 
-      <p>{quoteOfTheDay}</p>
+      <p>{quoteOfTheDay.text}</p>
 
       <p>7 <button>inc</button><button>dec</button></p>
 
