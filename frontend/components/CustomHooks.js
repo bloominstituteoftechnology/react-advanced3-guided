@@ -37,8 +37,7 @@ export default function App() {
     <>
       <h2>Custom Hooks</h2>
 
-      <p>The more clearly we can focus our attention on the wonders and realities
-        of the universe about us, the less taste we shall have for destruction.</p>
+      <p>{quoteOfTheDay}</p>
 
       <p>7 <button>inc</button><button>dec</button></p>
 
