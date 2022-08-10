@@ -40,7 +40,8 @@ export default function App() {
   const quote = useRandomQuote()
   return (
     <form>
-      <h2>Custom Hooks {quote.text}</h2>
+      <h2>Custom Hooks</h2>
+      <p>{quote.text}</p>
       <input onChange={onChange} value={form.foo} name="foo" placeholder="type foo" />
       <input onChange={onChange} value={form.bar} name="bar" placeholder="type bar" />
       <input onChange={onChange} value={form.baz} name="baz" placeholder="type baz" />
