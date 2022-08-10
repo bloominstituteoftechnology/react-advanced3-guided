@@ -21,15 +21,12 @@ function useRandomQuote() {
 
 function useCount(initial) {
   const [value, setValue] = useState(initial)
-
   const inc = () => {
     setValue(value + 1)
   }
-
   const dec = () => {
     setValue(value - 1)
   }
-
   return [value, inc, dec]
 }
 
@@ -43,7 +40,7 @@ function useLS(key, value) {
 
 export default function App() {
   const quoteOfTheDay = useRandomQuote()
-  const [count, inc, dec] = useCount(9)
+  const [count, inc, dec] = useCount(19)
   return (
     <>
       <h2>Custom Hooks</h2>
