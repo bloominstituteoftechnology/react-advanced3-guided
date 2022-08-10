@@ -22,9 +22,9 @@ function useRandomQuote() {
 function useCount(initial) {
   const [value, setValue] = useState(initial)
 
-  
 
-  return [4, Function.prototype, Function.prototype]
+
+  return [value, Function.prototype, Function.prototype]
 }
 
 function useForm(key, values) {
@@ -37,7 +37,7 @@ function useLS(key, value) {
 
 export default function App() {
   const quoteOfTheDay = useRandomQuote()
-  const [count, inc, dec] = useCount(4)
+  const [count, inc, dec] = useCount(9)
   return (
     <>
       <h2>Custom Hooks</h2>
