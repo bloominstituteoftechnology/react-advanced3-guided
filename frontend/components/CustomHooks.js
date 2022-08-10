@@ -32,8 +32,8 @@ function useCount(initial) {
 
 function useForm(initial) {
   const [values, setValues] = useState(initial)
-  
-  return [{ foo: '', bar: '', baz: '' }, Function.prototype]
+
+  return [values, Function.prototype]
 }
 
 function useLS(key, value) {
