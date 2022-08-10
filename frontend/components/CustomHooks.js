@@ -32,7 +32,7 @@ function useCount(initial) {
 
 function useForm(initial) {
   const [values, setValues] = useState(initial)
-
+  
   return [values, Function.prototype]
 }
 
