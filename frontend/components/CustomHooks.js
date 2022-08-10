@@ -42,6 +42,7 @@ function useForm(initial) {
 }
 
 function useLS(key, value) {
+  debugger
   window.localStorage.setItem('foobar', JSON.stringify([1, 2, 3]))
 }
 
