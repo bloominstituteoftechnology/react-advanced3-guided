@@ -34,7 +34,8 @@ function useForm(initial) {
   const [values, setValues] = useState(initial)
 
   const onChange = (evt) => {
-    debugger
+    const {name, value} = evt.target
+    setValues()
   }
 
   return [values, onChange]
