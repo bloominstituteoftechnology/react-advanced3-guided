@@ -5,9 +5,11 @@ function useRandomQuote() {
   const [quote, setQuote] = useState({})
   useEffect(() => {
     axios.get('http://localhost:9000/api/quotes')
-      .then()
+      .then(res => {
+        // 
+      })
       .catch(err => {
-        
+        console.log(err.message)
       })
   }, [])
 }
