@@ -33,7 +33,7 @@ function useLS(key, value) {
 
 export default function App() {
   const quoteOfTheDay = useRandomQuote()
-  const []
+  const [count, inc, dec] = useCount(4)
   return (
     <>
       <h2>Custom Hooks</h2>
