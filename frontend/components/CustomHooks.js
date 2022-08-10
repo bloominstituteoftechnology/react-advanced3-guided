@@ -4,7 +4,7 @@ import axios from 'axios'
 function useRandomQuote() {
   const [quote, setQuote] = useState({})
   useEffect(() => {
-    axios.get('http://localhost:9000/api/quotedfgdfghgdfhdgfs')
+    axios.get('http://localhost:9000/api/quotes')
       .then(res => {
         const numOfQuotes = res.data.quotes.length
         const randomIdx = Math.floor(Math.random() * numOfQuotes)
