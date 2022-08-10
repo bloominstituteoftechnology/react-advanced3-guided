@@ -21,6 +21,7 @@ function useRandomQuote() {
 
 function useCount(initial) {
   
+
   return [4, Function.prototype, Function.prototype]
 }
 
