@@ -33,7 +33,9 @@ function useCount(initial) {
 function useForm(initial) {
   const [values, setValues] = useState(initial)
 
-  
+  const onChange = (evt) => {
+    
+  }
 
   return [values, Function.prototype]
 }
