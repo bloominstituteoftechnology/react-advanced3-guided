@@ -58,9 +58,6 @@ export default function App() {
   const quoteOfTheDay = useRandomQuote()
   const [count, inc, dec] = useCount(19)
   const [values, onChange] = useForm('nastyForm', { foo: '', bar: '', baz: '' })
-  const [values, onChange] = useForm('nastyForm', { foo: '', bar: '', baz: '' })
-  const [values, onChange] = useForm('nastyForm', { foo: '', bar: '', baz: '' })
-  const [values, onChange] = useForm('nastyForm', { foo: '', bar: '', baz: '' })
 
   return (
     <>
