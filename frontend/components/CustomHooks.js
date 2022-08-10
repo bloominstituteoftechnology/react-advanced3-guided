@@ -34,8 +34,8 @@ function useForm(initial) {
   const [values, setValues] = useState(initial)
 
   const onChange = (evt) => {
-    const {name, value} = evt.target
-    setValues()
+    const { name, value } = evt.target
+    setValues({ ...values, [name]: value })
   }
 
   return [values, onChange]
