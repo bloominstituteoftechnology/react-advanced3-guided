@@ -32,6 +32,7 @@ function useCount(initial) {
 
 function useForm(key, values) {
 
+  return [{ foo: '', bar: '', baz: '' }]
 }
 
 function useLS(key, value) {
