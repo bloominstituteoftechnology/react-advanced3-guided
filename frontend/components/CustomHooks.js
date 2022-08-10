@@ -13,7 +13,6 @@ function useRandomQuote() {
         setQuote(randomQuote)
       })
       .catch(err => {
-        debugger
         console.log(err.message)
       })
   }, [])
@@ -34,6 +33,7 @@ function useLS(key, value) {
 
 export default function App() {
   const quoteOfTheDay = useRandomQuote()
+  const []
   return (
     <>
       <h2>Custom Hooks</h2>
