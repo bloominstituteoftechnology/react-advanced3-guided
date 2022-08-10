@@ -52,9 +52,9 @@ export default function App() {
       <p>{count} <button onClick={inc}>inc</button><button onClick={dec}>dec</button></p>
 
       <form>
-        <input value={values.foo} onChange={onCh} name="foo" placeholder="type foo" /><br />
-        <input value={values.bar} onChange={onCh} name="bar" placeholder="type bar" /><br />
-        <input value={values.baz} onChange={onCh} name="baz" placeholder="type baz" />
+        <input value={values.foo} onChange={onChange} name="foo" placeholder="type foo" /><br />
+        <input value={values.bar} onChange={onChange} name="bar" placeholder="type bar" /><br />
+        <input value={values.baz} onChange={onChange} name="baz" placeholder="type baz" />
       </form>
     </>
   )
