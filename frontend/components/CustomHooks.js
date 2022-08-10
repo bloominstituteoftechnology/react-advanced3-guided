@@ -23,7 +23,7 @@ function useCount(initial) {
   const [value, setValue] = useState(initial)
 
   const inc = () => {
-    debugger
+    setValue()
   }
 
   const dec = () => {
