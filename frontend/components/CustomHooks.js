@@ -30,8 +30,8 @@ function useCount(initial) {
   return [value, inc, dec]
 }
 
-function useForm(key, values) {
-
+function useForm(values) {
+  // ????
   return [{ foo: '', bar: '', baz: '' }, Function.prototype]
 }
 
