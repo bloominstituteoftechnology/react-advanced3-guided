@@ -56,7 +56,9 @@ export default function App() {
   const [count, inc, dec] = useCount(19)
   const [values, onChange] = useForm({ foo: '', bar: '', baz: '' })
 
-  const [stuff, setStuff] = useLs()
+  const [stuff, setStuff] = useLS('foobar', [1, 2, 3])
+
+  debugger
 
   return (
     <>
