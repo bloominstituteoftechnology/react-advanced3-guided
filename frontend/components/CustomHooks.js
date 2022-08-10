@@ -34,10 +34,10 @@ function useForm(initial) {
   const [values, setValues] = useState(initial)
 
   const onChange = (evt) => {
-    
+    debugger
   }
 
-  return [values, Function.prototype]
+  return [values, onChange]
 }
 
 function useLS(key, value) {
