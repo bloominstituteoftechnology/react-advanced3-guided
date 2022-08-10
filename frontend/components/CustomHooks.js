@@ -32,7 +32,7 @@ function useCount(initial) {
 
 function useForm(key, values) {
 
-  return [{ foo: '', bar: '', baz: '' }]
+  return [{ foo: '', bar: '', baz: '' }, Function.prototype]
 }
 
 function useLS(key, value) {
