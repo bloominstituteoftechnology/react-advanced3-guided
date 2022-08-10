@@ -56,6 +56,8 @@ export default function App() {
   const [count, inc, dec] = useCount(19)
   const [values, onChange] = useForm({ foo: '', bar: '', baz: '' })
 
+  const [stuff, setStuff] = useLs()
+
   return (
     <>
       <h2>Custom Hooks</h2>
