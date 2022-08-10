@@ -50,7 +50,9 @@ function useLS(key, value) { // work just like `useState('foobar', [1,2,3])`
       : value
   })
 
-  const setState = ()
+  const setState = (data) => {
+
+  }
 
   return [data, Function.prototype]
 }
