@@ -50,7 +50,7 @@ export default function App() {
     <>
       <h2>Custom Hooks</h2>
       <p>{quote.text}</p>
-      <p>{count}<button onClick={inc}>inc</button><button onClick={dec}>dec</button></p>
+      <p>{count} <button onClick={inc}>inc</button><button onClick={dec}>dec</button></p>
       <form>
         <input onChange={onChange} value={form.foo} name="foo" placeholder="type foo" /><br />
         <input onChange={onChange} value={form.bar} name="bar" placeholder="type bar" /><br />
