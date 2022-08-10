@@ -30,8 +30,8 @@ function useCount(initial) {
   return [value, inc, dec]
 }
 
-function useForm(values) {
-  const [values, setValues] = use
+function useForm(initial) {
+  const [values, setValues] = useState(initial)
   return [{ foo: '', bar: '', baz: '' }, Function.prototype]
 }
 
