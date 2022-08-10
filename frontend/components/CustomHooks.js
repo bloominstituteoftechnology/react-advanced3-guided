@@ -9,7 +9,8 @@ function useRandomQuote() {
         const numOfQuotes = res.data.quotes.length
         const randomIdx = Math.floor(Math.random() * numOfQuotes)
         const randomQuote = res.data.quotes[randomIdx]
-        debugger
+
+        
       })
       .catch(err => {
         console.log(err.message)
