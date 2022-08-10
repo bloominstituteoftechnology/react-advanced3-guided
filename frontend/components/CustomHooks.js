@@ -42,7 +42,7 @@ function useForm(initial) {
 }
 
 function useLS(key, value) {
-  
+  window.localStorage.setItem('')
 }
 
 export default function App() {
