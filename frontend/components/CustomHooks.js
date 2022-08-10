@@ -30,7 +30,7 @@ function useCount(initial) {
 
   }
 
-  return [value, Function.prototype, Function.prototype]
+  return [value, inc, dec]
 }
 
 function useForm(key, values) {
