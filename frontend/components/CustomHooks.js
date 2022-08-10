@@ -15,6 +15,20 @@ function useRandomQuote() {
   return quote
 }
 
+function useCount(initial) {
+  const [count, setCount] = useState(initial)
+  const inc = () => setCount(count + 1)
+  const dec = () => setCount(count - 1)
+  return [count, inc, dec]
+}
+
+function useForm(key, keys) {
+  const [form, setForm] = useLS(key, keys)
+  const onChange = ({ target: { name, value } }) =>
+    setForm({ ...form, [name]: value })
+  return [form, onChange]
+}
+
 function useLS(key, value) {
   const [valueLS, setValueLS] = useState(() => {
     const item = window.localStorage.getItem(key)
@@ -28,23 +42,20 @@ function useLS(key, value) {
   return [valueLS, setValue]
 }
 
-function useForm(key, keys) {
-  const [form, setForm] = useLS(key, keys)
-  const onChange = ({ target: { name, value } }) =>
-    setForm({ ...form, [name]: value })
-  return [form, onChange]
-}
-
 export default function App() {
   const [form, onChange] = useForm('form', { foo: '', bar: '', baz: '' })
+  const [count, inc, dec] = useCount(7)
   const quote = useRandomQuote()
   return (
-    <form>
+    <>
       <h2>Custom Hooks</h2>
       <p>{quote.text}</p>
-      <input onChange={onChange} value={form.foo} name="foo" placeholder="type foo" />
-      <input onChange={onChange} value={form.bar} name="bar" placeholder="type bar" />
-      <input onChange={onChange} value={form.baz} name="baz" placeholder="type baz" />
-    </form>
+      <p>{count}<button onClick={inc}>inc</button><button onClick={dec}>dec</button></p>
+      <form>
+        <input onChange={onChange} value={form.foo} name="foo" placeholder="type foo" /><br />
+        <input onChange={onChange} value={form.bar} name="bar" placeholder="type bar" /><br />
+        <input onChange={onChange} value={form.baz} name="baz" placeholder="type baz" />
+      </form>
+    </>
   )
 }
