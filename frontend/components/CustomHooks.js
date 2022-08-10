@@ -32,12 +32,10 @@ function useCount(initial) {
 
 function useForm(initial) {
   const [values, setValues] = useLS('form', initial)
-
   const onChange = (evt) => {
     const { name, value } = evt.target
     setValues({ ...values, [name]: value })
   }
-
   return [values, onChange]
 }
 
