@@ -30,8 +30,8 @@ function useCount(initial) {
   return [value, inc, dec]
 }
 
-function useForm(initial) {
-  const [values, setValues] = useLS('form', initial)
+function useForm(key, initial) {
+  const [values, setValues] = useLS(key, initial)
   const onChange = (evt) => {
     const { name, value } = evt.target
     setValues({ ...values, [name]: value })
@@ -57,7 +57,10 @@ function useLS(key, value) { // work just like `useState('foobar', [1,2,3])`
 export default function App() {
   const quoteOfTheDay = useRandomQuote()
   const [count, inc, dec] = useCount(19)
-  const [values, onChange] = useForm({ foo: '', bar: '', baz: '' })
+  const [values, onChange] = useForm('nastyForm', { foo: '', bar: '', baz: '' })
+  const [values, onChange] = useForm('nastyForm', { foo: '', bar: '', baz: '' })
+  const [values, onChange] = useForm('nastyForm', { foo: '', bar: '', baz: '' })
+  const [values, onChange] = useForm('nastyForm', { foo: '', bar: '', baz: '' })
 
   return (
     <>
