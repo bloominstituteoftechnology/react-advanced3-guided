@@ -43,7 +43,7 @@ function useForm(initial) {
 
 function useLS(key, value) { // work just like `useState('foobar', [1,2,3])`
   // window.localStorage.setItem('foobar', JSON.stringify([1, 2, 3]))
-  const []
+  const [data, setData] = useState(value)
 }
 
 export default function App() {
