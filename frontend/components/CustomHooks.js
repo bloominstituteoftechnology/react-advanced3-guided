@@ -6,7 +6,6 @@ function useRandomQuote() {
   useEffect(() => {
     axios.get('http://localhost:9000/api/quotes')
       .then(res => {
-        debugger
         const numOfQuotes = res.data.quotes.length
         const randomIdx = Math.floor(Math.random() * numOfQuotes)
         const randomQuote = res.data.quotes[randomIdx]
