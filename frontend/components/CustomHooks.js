@@ -31,7 +31,7 @@ function useCount(initial) {
 }
 
 function useForm(values) {
-  // ????
+  const [values, setValues] = use
   return [{ foo: '', bar: '', baz: '' }, Function.prototype]
 }
 
