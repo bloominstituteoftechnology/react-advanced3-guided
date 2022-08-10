@@ -41,7 +41,7 @@ function useForm(initial) {
   return [values, onChange]
 }
 
-function useLS(key, value) {
+function useLS(key, value) { // work just like useState('foobar', [1,2,3])
   // window.localStorage.setItem('foobar', JSON.stringify([1, 2, 3]))
 }
 
