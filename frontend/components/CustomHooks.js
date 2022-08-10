@@ -21,7 +21,7 @@ function useRandomQuote() {
 
 function useCount(initial) {
   const [value, setValue] = useState(initial)
-
+  
   const inc = () => {
     setValue()
   }
