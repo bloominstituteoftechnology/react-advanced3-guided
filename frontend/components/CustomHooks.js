@@ -18,7 +18,7 @@ function useLS(key, value) {
 }
 
 export default function App() {
-
+  const quoteOfTheDay = useRandomQuote()
   return (
     <>
       <h2>Custom Hooks</h2>
