@@ -48,13 +48,11 @@ function useLS(key, value) { // work just like `useState('foobar', [1,2,3])`
       ? JSON.parse(fromLocalStorage)
       : value
   })
-
   const setState = (dataToSet) => {
     const stringified = JSON.stringify(dataToSet)
     window.localStorage.setItem(key, stringified)
     setData(dataToSet)
   }
-
   return [data, setState]
 }
 
@@ -62,10 +60,6 @@ export default function App() {
   const quoteOfTheDay = useRandomQuote()
   const [count, inc, dec] = useCount(19)
   const [values, onChange] = useForm({ foo: '', bar: '', baz: '' })
-
-  const [stuff, setStuff] = useLS('foobar', [1, 2, 3])
-
-  debugger
 
   return (
     <>
