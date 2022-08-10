@@ -20,7 +20,9 @@ function useRandomQuote() {
 }
 
 function useCount(initial) {
-  const [value, setValue] = useState()
+  const [value, setValue] = useState(initial)
+
+  
 
   return [4, Function.prototype, Function.prototype]
 }
