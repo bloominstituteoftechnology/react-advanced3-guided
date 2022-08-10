@@ -41,7 +41,7 @@ export default function App() {
 
       <p>{quoteOfTheDay.text}</p>
 
-      <p>{count} <button oncClick={inc}>inc</button><button oncClick={dev}>dec</button></p>
+      <p>{count} <button oncClick={inc}>inc</button><button oncClick={dec}>dec</button></p>
 
       <form>
         <input name="foo" placeholder="type foo" /><br />
