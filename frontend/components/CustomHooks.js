@@ -3,7 +3,9 @@ import axios from 'axios'
 
 function useRandomQuote() {
   const [quote, setQuote] = useState({})
-  
+  useEffect(() => {
+    
+  }, [])
 }
 
 function useCount(initial) {
