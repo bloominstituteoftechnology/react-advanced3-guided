@@ -46,7 +46,8 @@ function useLS(key, value) { // work just like `useState('foobar', [1,2,3])`
   const [data, setData] = useState(() => {
     const fromLocalStorage = window.localStorage.getItem(key)
     return fromLocalStorage
-      : JSON.parse()
+      ? JSON.parse(fromLocalStorage)
+      : value
   })
 }
 
